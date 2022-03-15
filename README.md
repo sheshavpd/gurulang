@@ -6,6 +6,9 @@
 <p align="center">
   <b>Guru lang is a fun programming language forked from BhaiLang :)</b>
 </p>
+<p align="center">
+Do checkout the online <a href="https://sheshavpd.github.io/gurulang/">Guru Lang PlayGround</a>.
+</p>
 <br>
 
 <h2 align="center">Installation</h2>

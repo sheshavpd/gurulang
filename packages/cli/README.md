@@ -1,34 +1,32 @@
-<h1 align="center">Bhai Lang</h1>
+<h1 align="center">Guru Lang</h1>
 <p align="center">
-<a href="https://lgtm.com/projects/g/DulLabs/bhai-lang/alerts/"><img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/DulLabs/bhai-lang.svg?logo=lgtm&logoWidth=18"/></a>
-<a href="https://lgtm.com/projects/g/DulLabs/bhai-lang/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/DulLabs/bhai-lang.svg?logo=lgtm&logoWidth=18"/></a>
-<a href="https://github.com/DulLabs/bhai-lang/actions/workflows/node.js.yml/badge.svg"><img alt="Build" src="https://github.com/DulLabs/bhai-lang/actions/workflows/node.js.yml/badge.svg"/></a>
-<a href="https://bhailang.js.org/"><img alt="Build" src="https://img.shields.io/badge/website-bhailang.js.org-orange"/></a>
-<a href="https://www.npmjs.com/package/bhailang"><img alt="Build" src="https://img.shields.io/badge/npm-bhailang-orange"/></a>
-  
+<a href="https://www.npmjs.com/package/gurulang"><img alt="Build" src="https://img.shields.io/badge/npm-gurulang-orange"/></a>
+
 </p>
 <p align="center">
-  <b>Bhai lang is a toy programming language written in Typescript.</b>
+  <b>Guru lang is a fun programming language forked from BhaiLang :)</b>
+</p>
+<p align="center">
+Do checkout the online <a href="https://sheshavpd.github.io/gurulang/">Guru Lang PlayGround</a>.
 </p>
 <br>
 
 <h2 align="center">Installation</h2>
 
 ```
-npm i -g bhailang
+npm i -g gurulang
 ```
 
 <h2 align="center">Usage</h2>
 
-<h4 align="left">Create a new file</h4><br/>
+<h4 align="left">Create a new file (<code>test.guru</code>)</h4>
 
 
 <h4 align="left">Edit the file with a text editor.
-You can also try out your code on <a href="https://bhailang.js.org/#playground">Bhai Lang PlayGround</a></h4>
 
 ```
 namskara guru
-  helu guru "Hello bhai";
+  helu guru "Hello Guru";
 aythu guru
 
 ```
@@ -36,16 +34,14 @@ aythu guru
 <h4 align="left">Run</h4>
 
 ```
-bhailang test.bhai
+gurulang test.guru
 ```
 
 <h4 align="left">Output</h4>
 
 ```
-hello bhai
+Hello Guru
 ```
-
-
 
 <h2 align="center">Documentation</h2>
 
@@ -79,7 +75,7 @@ aythu guru
 ```
 
 <h3 align="center">Types</h3>
-<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>nalla. nija and sullu</code> are the boolean values.</p>
+<p align="center">Numbers and strings are like other languages. Null values can be denoted using <code>nalla</code>. <code>nija</code> and <code>sullu</code> are the boolean values.</p>
 
 ```
 
@@ -106,12 +102,12 @@ namskara guru
     nodu guru b = 20;
     helu guru a + b;
   }
-  helu guru 5, 'ok', nalla , nija , sullu;
+  helu guru 5, 'ok' , nija , sullu;
 aythu guru
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">GuruLang supports simple if else construct , <code>guru eega</code> block will execute if condition is <code>nija</code> and <code>illandre guru</code> block will execute if condition is <code>sullu</code>.</p>
+<p align="center">Gurulang supports simple if else construct , <code>guru eega</code> block will execute if condition is <code>nija</code> and <code>illandre guru</code> block will execute if condition is <code>sullu</code>.</p>
 
 ```
 
@@ -136,7 +132,7 @@ namskara guru
   guru ellivargu (a < 10) {
    a += 1;
    guru eega (a == 5) aadre{
-    helu guru "andar se helu guru ", a;
+    helu guru "olaginda helu guru ", a;
     mundhe nodu guru;
    }
    guru eega (a == 6) aadre{
@@ -147,6 +143,14 @@ namskara guru
   helu guru "done";
 aythu guru
 ```
+
+
+
+
+
+
+
+
 
 
 
