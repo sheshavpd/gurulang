@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode, NodeType } from "bhai-lang-parser";
+import { ASTNode, NodeType } from "guru-lang-parser";
 
 import InvalidStateException from "../../exceptions/invalidStateException";
 import InterpreterModule from "../../module/interpreterModule";
@@ -16,7 +16,7 @@ export default class VariableDeclaration implements Visitor {
 
     if (node.init.type === NodeType.NullLiteral) value = null;
     else if (node.init.type === NodeType.BooleanLiteral)
-      value = node.init.value === "sahi" ? true : false;
+      value = node.init.value === "nija" ? true : false;
     else
       value = InterpreterModule.getVisitor(node.init.type).visitNode(node.init);
 

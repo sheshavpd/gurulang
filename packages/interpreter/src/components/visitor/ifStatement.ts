@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode } from "bhai-lang-parser";
+import { ASTNode } from "guru-lang-parser";
 
 import InterpreterModule from "../../module/interpreterModule";
 import Scope from "../scope";
@@ -11,7 +11,7 @@ export default class IfStatement implements Visitor {
     const parentScope = InterpreterModule.getCurrentScope();
     if (test) {
       const testResult = InterpreterModule.getVisitor(test.type).visitNode(test);
-      if (testResult === true || testResult === "sahi") {
+      if (testResult === true || testResult === "nija") {
         const consequent = node.consequent;
         if (consequent) {
           InterpreterModule.setCurrentScope(new Scope(parentScope));

@@ -1,7 +1,7 @@
 import Prism, { languages } from "prismjs";
 
 
-export const bhaiLangSyntax = languages.extend("clike", {
+export const guruLangSyntax = languages.extend("clike", {
   comment: [
     {
       pattern: /(^|[^\\:])\/\/.*/,
@@ -18,11 +18,11 @@ export const bhaiLangSyntax = languages.extend("clike", {
     pattern: /(["'])((?:\\\1|(?:(?!\1)).)*)(\1)/,
     greedy: true,
   },
-  keyword: /\b(?:hi bhai|bye bhai|bol bhai|bhai ye hai|nalla|agar bhai|warna bhai|jab tak bhai|bas kar bhai|agla dekh bhai)\b/,
-  boolean: /\b(?:sahi|galat)\b/,
+  keyword: /\b(?:namskara guru|aythu guru|helu guru|nodu guru|nalla|guru eega|aadre|illandre guru|guru ellivargu|saak bidu guru|mundhe nodu guru)\b/,
+  boolean: /\b(?:nija|sullu)\b/,
   number: /(?:(?:\b\d+(?:\.\d*)?|\B\.\d+)(?:e[-+]?\d+)?)i?/i,
   operator:
     /[*/%^!=]=?|~|\+[=+]?|-[=-]?|\|[=|]?|&(?:=|&|\^=?)?|>(?:>=?|=)?|<(?:<=?|=|-)?|:=|\.\.\./,
 });
 
-Prism.languages.bhaiLang = bhaiLangSyntax;
+Prism.languages.bhaiLang = guruLangSyntax;

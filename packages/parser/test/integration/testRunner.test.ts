@@ -68,8 +68,8 @@ function _runNegativeTests(testCase: negTestObjType) {
 // test("jest test", () => {
 //   const parser = bhaiLangModule.getParser();
 //   console.debug(JSON.stringify(parser.parse(`
-//   hi bhai
-//       bol bhai 9 == 90;
-//       bye bhai
+//   namskara guru
+//       helu guru 9 == 90;
+//       aythu guru
 //   `)));
 // })

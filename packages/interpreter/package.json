@@ -1,5 +1,5 @@
 {
-  "name": "bhai-lang-interpreter",
+  "name": "guru-lang-interpreter",
   "version": "0.0.1",
   "description": "Interpreter for bhai-lang",
   "source": "src/index.ts",
@@ -13,21 +13,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DulLabs/bhai-lang.git"
+    "url": "git+https://github.com/sheshavpd/guru-lang.git"
   },
   "keywords": [
     "programming",
     "language",
-    "bhai-lang",
+    "guru-lang",
     "bl",
     "javascript",
     "typescript"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DulLabs/bhai-lang/issues"
+    "url": "https://github.com/sheshavpd/guru-lang/issues"
   },
-  "homepage": "https://github.com/DulLabs/bhai-lang#readme",
+  "homepage": "https://github.com/sheshavpd/guru-lang#readme",
   "devDependencies": {
     "ts-node": "^10.4.0",
     "ts-jest": "^27.1.2",
@@ -36,6 +36,6 @@
     "@types/jest": "^27.4.0",
     "config": "*",
     "tsconfig": "*",
-    "bhai-lang-parser": "*"
+    "guru-lang-parser": "../parser"
   }
 }

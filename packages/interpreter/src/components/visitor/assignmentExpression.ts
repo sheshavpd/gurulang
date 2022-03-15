@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode } from "bhai-lang-parser";
+import { ASTNode } from "guru-lang-parser";
 
 import InvalidStateException from "../../exceptions/invalidStateException";
 import NallaPointerException from "../../exceptions/nallaPointerException";
@@ -30,12 +30,12 @@ export default class AssignmentExpression implements Visitor {
 
       if (left === null && node.operator !== "=")
         throw new NallaPointerException(
-          `Nalla operand ni jamta "${node.operator}" ke sath`
+          `Nalla operand sari hogalla "${node.operator}" jothege`
         );
 
       if ((left === true || left === false) && node.operator !== "=")
         throw new RuntimeException(
-          `Boolean operand ni jamta "${node.operator}" ke sath`
+          `Boolean operand sari hogalla "${node.operator}" jothege`
         );
 
       const newValue = getOperationValue(

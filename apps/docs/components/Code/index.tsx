@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import interpreter from "bhai-lang-interpreter";
+import interpreter from "guru-lang-interpreter";
 
 import { sendEvents } from "../../helpers";
 
@@ -9,23 +9,24 @@ import Terminal from "./Terminal";
 
 
 const initialCode = `
-hi bhai
- bol bhai "Hello World";
- 
-  bhai ye hai a = 3;
-  bhai ye hai b = 0;
+namskara guru
+  helu guru "Kannada😁";
+  nodu guru appu_fan = nija;
+  nodu guru a = 1;
 
-  jab tak bhai (b < 5) {
-    bol bhai b;
-
-    agar bhai (b == a){
-      bol bhai "b is equal to a";
+  guru ellivargu (a < 10) {
+  
+    guru eega (appu_fan) aadre{
+      helu guru "Appu Rajakumara 😎";
     }
-
-    b += 1;
+    guru eega(a == 5) aadre {
+      saak bidu guru; //break
+    }
+    
+    a += 1;
   }
 
-bye bhai
+aythu guru
 `;
 
 const Code = (props: Props) => {

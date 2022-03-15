@@ -18,7 +18,7 @@ export default class VariableStatement extends Statement {
 
   getStatement(): ASTNode {
     this._tokenExecutor.eatTokenAndForwardLookahead(
-      TokenTypes.BHAI_YE_HAI_TYPE
+      TokenTypes.NODU_GURU_TYPE
     );
 
     const declarations = this._getVariableDeclarationList();

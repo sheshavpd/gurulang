@@ -16,7 +16,7 @@ export default abstract class Statement {
 
   static getStatementImpl(lookahead: Token): Statement {
     switch (lookahead.type) {
-      case TokenTypes.BOL_BHAI_TYPE:
+      case TokenTypes.HELU_GURU_TYPE:
         return BhaiLangModule.getPrintStatement();
 
       case TokenTypes.SEMI_COLON_TYPE:
@@ -25,19 +25,19 @@ export default abstract class Statement {
       case TokenTypes.OPEN_CURLY_BRACE_TYPE:
         return BhaiLangModule.getBlockStatement();
 
-      case TokenTypes.BHAI_YE_HAI_TYPE:
+      case TokenTypes.NODU_GURU_TYPE:
         return BhaiLangModule.getVariableStatement();
 
-      case TokenTypes.AGAR_BHAI:
+      case TokenTypes.GURU_EEGA_TYPE:
         return BhaiLangModule.getIfStatement();
 
-      case TokenTypes.JAB_TAK_BHAI:
+      case TokenTypes.GURU_ELLIVARGU_TYPE:
         return BhaiLangModule.getWhileStatement();
 
-      case TokenTypes.BAS_KAR_BHAI:
+      case TokenTypes.SAAK_BIDU_GURU_TYPE:
         return BhaiLangModule.getBreakStatement();
       
-      case TokenTypes.AGLA_DEKH_BHAI:
+      case TokenTypes.MUNDHE_NODU_GURU_TYPE:
         return BhaiLangModule.getContinueStatement();
 
       default:

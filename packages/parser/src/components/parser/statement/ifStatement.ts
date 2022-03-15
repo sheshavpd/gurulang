@@ -20,7 +20,7 @@ export default class IfStatement extends Statement {
 
   getStatement(): ASTNode {
 
-    this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.AGAR_BHAI);
+    this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.GURU_EEGA_TYPE);
 
     this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.OPEN_PARENTHESIS_TYPE);
 
@@ -29,14 +29,15 @@ export default class IfStatement extends Statement {
     ).getExpression();
 
     this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.CLOSED_PARENTHESIS_TYPE);
+    this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.AADRE_TYPE);
 
     if (this._tokenExecutor.getLookahead() == null) {
-      throw new SyntaxError(`Unexpected end of "agar bhai" statement`);
+      throw new SyntaxError(`Unexpected end of "guru eega" statement`);
     }
 
     const consequent = Statement.getStatementImpl(this._tokenExecutor.getLookahead()!).getStatement();
 
-    const alternate = this._tokenExecutor.getLookahead() != null && this._tokenExecutor.getLookahead()!.type === TokenTypes.WARNA_BHAI ? this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.WARNA_BHAI) && Statement.getStatementImpl(this._tokenExecutor.getLookahead()!).getStatement() : this._nullLiteral.getLiteral();
+    const alternate = this._tokenExecutor.getLookahead() != null && this._tokenExecutor.getLookahead()!.type === TokenTypes.ILLANDRE_GURU_TYPE ? this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.ILLANDRE_GURU_TYPE) && Statement.getStatementImpl(this._tokenExecutor.getLookahead()!).getStatement() : this._nullLiteral.getLiteral();
 
     return {
         type: NodeType.IfStatement,

@@ -3,8 +3,8 @@ export const NoOutputPositiveTests = [
   {
     name: "interpreter empty init statement test, should success",
     input: `
-      hi bhai
-      bye bhai
+      namskara guru
+      aythu guru
     `,
   },
   {
@@ -12,139 +12,139 @@ export const NoOutputPositiveTests = [
     input: `
       some random characters
       random random random
-      hi bhai
-      bye bhai
+      namskara guru
+      aythu guru
     `,
   },
   // empty statement tests
   {
     name: "interpreter empty statement test, should success",
     input: `
-      hi bhai
+      namskara guru
       ;
-      bye bhai
+      aythu guru
     `,
   },
   {
     name: "interpreter multiple empty statements test, should success",
     input: `
-      hi bhai
+      namskara guru
       ;
       ;
       ;;
-      bye bhai
+      aythu guru
     `,
   },
   // block statement tests
   {
     name: "interpreter block statement test with empty block, should success",
     input: `
-      hi bhai
+      namskara guru
       {};
-      bye bhai
+      aythu guru
     `,
   },
   {
     name: "interpreter block statement test with variable statement inside, should success",
     input: `
-      hi bhai
+      namskara guru
       {
-        bhai ye hai a = 4;
+        nodu guru a = 4;
       }
-      bye bhai
+      aythu guru
     `,
   },
   // variable statement test
   {
     name: "interpreter variable statement test with basic variable declaration, should success",
     input: `
-      hi bhai
-      bhai ye hai a, b, c;
-      bye bhai
+      namskara guru
+      nodu guru a, b, c;
+      aythu guru
     `,
   },
   {
     name: "interpreter variable statement test with basic variable declaration and initialisation, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 10, b = "crap";
-      bye bhai
+      namskara guru
+      nodu guru a = 10, b = "crap";
+      aythu guru
     `,
   },
   {
     name: "interpreter variable statement test with multiple variable initialisation, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 10, b = 5;
-      bye bhai
+      namskara guru
+      nodu guru a = 10, b = 5;
+      aythu guru
     `,
   },
   {
     name: "interpreter variable statement test with variable initialisation with some expression, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 7 + 90;
-      bye bhai
+      namskara guru
+      nodu guru a = 7 + 90;
+      aythu guru
     `,
   },
   // assignment expression tests
   {
     name: "simple assignment expression test with only one identifer, should success",
     input: `
-      hi bhai
-      bhai ye hai a = sahi;
+      namskara guru
+      nodu guru a = nija;
       a = 4;
-      bye bhai
+      aythu guru
     `,
   },
   {
     name: "complex assignment expression test with only one identifer, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 2;
+      namskara guru
+      nodu guru a = 2;
       a *= 4;
-      bye bhai
+      aythu guru
     `,
   },
   // paranthesized expression tests
   {
     name: "paranthesized expression test with one parenthesis and simple expression, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 2;
+      namskara guru
+      nodu guru a = 2;
       (a + 4);
-      bye bhai
+      aythu guru
     `,
   },
   {
     name: "paranthesized expression test with one parenthesis and complex expression, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 2;
+      namskara guru
+      nodu guru a = 2;
       (a + 4) * 10 + (5 - 4);
-      bye bhai
+      aythu guru
     `,
   },
   {
     name: "paranthesized expression test with multiple parenthesis, should success",
     input: `
-      hi bhai
-      bhai ye hai a = 2;
+      namskara guru
+      nodu guru a = 2;
       (a * (4 + 8) + 10);
-      bye bhai
+      aythu guru
     `,
   },
   // if statement test
   {
     name: "paranthesized expression test with multiple parenthesis, should success",
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x != 9) {
+    namskara guru
+    nodu guru x = 9;
+    guru eega (x != 9) aadre{
       x = 5;
-      bol bhai x;
-    } warna bhai (x >= 9);
-    bye bhai;
+      helu guru x;
+    } illandre guru (x >= 9);
+    aythu guru;
     `,
   },
 ];
@@ -153,278 +153,278 @@ export const WithOutputPositiveTests = [
   {
     name: "variable assignment test with multiple variables, should success",
     input: `
-      hi bhai;
-      bhai ye hai a , b;
+      namskara guru;
+      nodu guru a , b;
       a = b = 60;
-      bol bhai a, b;
-      bye bhai
+      helu guru a, b;
+      aythu guru
     `,
     output: "60 60",
   },
   {
     name: "printStatement test with multiple expressions, should success",
     input: `
-      hi bhai;
-      bhai ye hai a = 2, b = 60;
-      bol bhai (a * (4 + 8) + 10), b;
-      bye bhai
+      namskara guru;
+      nodu guru a = 2, b = 60;
+      helu guru (a * (4 + 8) + 10), b;
+      aythu guru
     `,
     output: "34 60",
   },
   {
     name: "printStatement test with multiple expressions and re assigning value of one variable, should success",
     input: `
-      hi bhai;
-      bhai ye hai a = 2, b = 60;
+      namskara guru;
+      nodu guru a = 2, b = 60;
 
       a = b + 3;
-      bol bhai a, b;
-      bye bhai
+      helu guru a, b;
+      aythu guru
     `,
     output: "63 60",
   },
   {
     name: "printStatement test with multiple expressions & without any variables, should success",
     input: `
-      hi bhai;
-      bol bhai "hello", sahi, galat;
-      bye bhai
+      namskara guru;
+      helu guru "hello", nija, sullu;
+      aythu guru
     `,
-    output: "hello sahi galat",
+    output: "hello nija sullu",
   },
   {
     name: "printStatement test with nalla, should success",
     input: `
-      hi bhai;
-      bol bhai nalla;
-      bye bhai;
+      namskara guru;
+      helu guru nalla;
+      aythu guru;
     `,
     output: "nalla",
   },
   {
     name: "printStatement test with nalla as second parameter, should success",
     input: `
-      hi bhai;
-      bol bhai 10, nalla;
-      bye bhai;
+      namskara guru;
+      helu guru 10, nalla;
+      aythu guru;
     `,
     output: "10 nalla",
   },
   {
     name: "printStatement test with string concatenation, should success",
     input: `
-      hi bhai;
-      bol bhai "hello" + "crap";
-      bye bhai;
+      namskara guru;
+      helu guru "hello" + "crap";
+      aythu guru;
     `,
     output: "hellocrap",
   },
   {
     name: "printStatement test with multiple expresions including nalla, should success",
     input: `
-      hi bhai;
-      bhai ye hai a = 70;
-      bol bhai 6*5, nalla, "jamtara", a;
-      bye bhai;
+      namskara guru;
+      nodu guru a = 70;
+      helu guru 6*5, nalla, "jamtara", a;
+      aythu guru;
     `,
     output: "30 nalla jamtara 70",
   },
   {
     name: "printStatement test with nalla variable, should success",
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bol bhai a;
-      bye bhai;
+      namskara guru;
+      nodu guru a;
+      helu guru a;
+      aythu guru;
     `,
     output: "nalla",
   },
   {
     name: `printStatement test with string "undefined", should success`,
     input: `
-      hi bhai;
-      bol bhai "undefined";
-      bye bhai;
+      namskara guru;
+      helu guru "undefined";
+      aythu guru;
     `,
     output: "undefined",
   },
   {
     name: `printStatement test with nalla variable, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bol bhai a;
-      bye bhai;
+      namskara guru;
+      nodu guru a;
+      helu guru a;
+      aythu guru;
     `,
     output: "nalla",
   },
   {
-    name: `printStatement test with sahi variable, should success`,
+    name: `printStatement test with nija variable, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = sahi;
-      bol bhai a;
-      bye bhai;
+      namskara guru;
+      nodu guru a = nija;
+      helu guru a;
+      aythu guru;
     `,
-    output: "sahi",
+    output: "nija",
   },
   {
-    name: `printStatement test with galat variable, should success`,
+    name: `printStatement test with sullu variable, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = galat;
-      bol bhai a;
-      bye bhai;
+      namskara guru;
+      nodu guru a = sullu;
+      helu guru a;
+      aythu guru;
     `,
-    output: "galat",
+    output: "sullu",
   },
   {
     name: `printStatement test with assignment expression, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a;
-      bol bhai a = 90;
-      bye bhai;
+      namskara guru;
+      nodu guru a;
+      helu guru a = 90;
+      aythu guru;
     `,
     output: "90",
   },
   {
     name: `printStatement test with logical AND, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 && 10;
-      bye bhai;
+      namskara guru;
+      helu guru 9 && 10;
+      aythu guru;
     `,
     output: "10",
   },
   {
     name: `printStatement test with logical OR, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 || 10;
-      bye bhai;
+      namskara guru;
+      helu guru 9 || 10;
+      aythu guru;
     `,
     output: "9",
   },
   {
     name: `printStatement test with logical - 1, should success`,
     input: `
-      hi bhai;
-      bol bhai galat && sahi;
-      bye bhai;
+      namskara guru;
+      helu guru sullu && nija;
+      aythu guru;
     `,
-    output: "galat",
+    output: "sullu",
   },
   {
     name: `printStatement test with logical - 2, should success`,
     input: `
-    hi bhai;
-    bhai ye hai a = sahi;
-    bol bhai a && galat;
-    bye bhai;
+    namskara guru;
+    nodu guru a = nija;
+    helu guru a && sullu;
+    aythu guru;
     `,
-    output: "galat",
+    output: "sullu",
   },
   {
     name: `printStatement test with logical - 3, should success`,
     input: `
-    hi bhai;
-    bhai ye hai a = sahi;
-    bol bhai a && sahi;
-    bye bhai;
+    namskara guru;
+    nodu guru a = nija;
+    helu guru a && nija;
+    aythu guru;
     `,
-    output: "sahi",
+    output: "nija",
   },
   {
     name: `printStatement test with equality, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 == 10;
-      bye bhai;
+      namskara guru;
+      helu guru 9 == 10;
+      aythu guru;
     `,
-    output: "galat",
+    output: "sullu",
   },
   {
     name: `printStatement test with inequality, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 != 10;
-      bye bhai;
+      namskara guru;
+      helu guru 9 != 10;
+      aythu guru;
     `,
-    output: "sahi",
+    output: "nija",
   },
   {
     name: `printStatement test with logical OR, should success`,
     input: `
-      hi bhai;
-      bol bhai 9 || 10;
-      bye bhai;
+      namskara guru;
+      helu guru 9 || 10;
+      aythu guru;
     `,
     output: "9",
   },
   {
     name: `printStatement test with logical OR - 2, should success`,
     input: `
-      hi bhai;
-      bol bhai galat || sahi;
-      bye bhai;
+      namskara guru;
+      helu guru sullu || nija;
+      aythu guru;
     `,
-    output: "sahi",
+    output: "nija",
   },
   // while statement / loop tests
   {
     name: `whileStatement test with 1 time loop, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 0;
-      jab tak bhai (a < 1) {
-        bol bhai "bhai";
+      namskara guru;
+      nodu guru a = 0;
+      guru ellivargu (a < 1) {
+        helu guru "bhai";
         a += 1;
       }
-      bye bhai;
+      aythu guru;
     `,
     output: "bhai",
   },
   {
     name: `whileStatement test with single break statement, should success`,
     input: `
-      hi bhai;
-      jab tak bhai (sahi) 
-        bas kar bhai;
-      bol bhai "end";
-      bye bhai;
+      namskara guru;
+      guru ellivargu (nija) 
+        saak bidu guru;
+      helu guru "end";
+      aythu guru;
     `,
     output: "end",
   },
   {
     name: `whileStatement test with nested loops, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 0;
-      jab tak bhai (a < 2) {
-        jab tak bhai (sahi)
-          bas kar bhai;
-        bol bhai "hello";
-        agar bhai (sahi)
-          bas kar bhai;
+      namskara guru;
+      nodu guru a = 0;
+      guru ellivargu (a < 2) {
+        guru ellivargu (nija)
+          saak bidu guru;
+        helu guru "hello";
+        guru eega (nija) aadre
+          saak bidu guru;
       }
-      bye bhai;
+      aythu guru;
     `,
     output: "hello",
   },
   {
     name: `whileStatement with multiple breaks, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 0;
-      jab tak bhai (a < 2) {
-        bol bhai "hello";
-        agar bhai (sahi)
-          bas kar bhai;
-        bas kar bhai;
-        bas kar bhai;
+      namskara guru;
+      nodu guru a = 0;
+      guru ellivargu (a < 2) {
+        helu guru "hello";
+        guru eega (nija) aadre
+          saak bidu guru;
+        saak bidu guru;
+        saak bidu guru;
       }
-      bye bhai;
+      aythu guru;
     `,
     output: "hello",
   },
@@ -432,119 +432,119 @@ export const WithOutputPositiveTests = [
   {
     name: `if statement success test - 1: only if, should success`,
     input: `
-    hi bhai
-    agar bhai (sahi) {
-      bol bhai "bhai";
+    namskara guru
+    guru eega (nija) aadre{
+      helu guru "bhai";
     }
-    bye bhai;
+    aythu guru;
     `,
     output: "bhai",
   },
   {
     name: `if statement success test - 2: if else both, should success`,
     input: `
-    hi bhai
-    agar bhai (sahi) {
-      bol bhai "sahi";
-    } warna bhai {
-      bol bhai "galat";
+    namskara guru
+    guru eega (nija) aadre{
+      helu guru "nija";
+    } illandre guru {
+      helu guru "sullu";
     }
-    bye bhai;
+    aythu guru;
     `,
-    output: "sahi",
+    output: "nija",
   },
   {
     name: `if statement success test - 3: if only with comarison condn, should success`,
     input: `
-    hi bhai
-    bhai ye hai x = 9;
-    agar bhai (x >= 9) {
+    namskara guru
+    nodu guru x = 9;
+    guru eega (x >= 9) aadre{
       x = 5;
-      bol bhai x;
+      helu guru x;
     } 
-    bye bhai;
+    aythu guru;
     `,
     output: "5",
   },
   // logical expression test
   {
-    name: `logical "&&" test with sahi galat, should success`,
+    name: `logical "&&" test with nija sullu, should success`,
     input: `
-        hi bhai
-        agar bhai (sahi && galat) {
-          bol bhai "sahi";
-        } warna bhai {
-          bol bhai "galat";
+        namskara guru
+        guru eega (nija && sullu) aadre{
+          helu guru "nija";
+        } illandre guru {
+          helu guru "sullu";
         }
-        bye bhai;
+        aythu guru;
       `,
-    output: `galat`,
+    output: `sullu`,
   },
   // modulus operator test
   {
     name: `modulus operator "%" test, should success`,
     input: `
-        hi bhai
-        bol bhai 90 % 9;
-        bye bhai;
+        namskara guru
+        helu guru 90 % 9;
+        aythu guru;
       `,
     output: `0`,
   },
   {
     name: `modulus operator "%" test - 2, should success`,
     input: `
-        hi bhai
-        bol bhai 27 % 5;
-        bye bhai;
+        namskara guru
+        helu guru 27 % 5;
+        aythu guru;
       `,
     output: `2`,
   },
   {
     name: `modulus operator "%" test - 2, should success`,
     input: `
-        hi bhai
-        bol bhai 5 % 20;
-        bye bhai;
+        namskara guru
+        helu guru 5 % 20;
+        aythu guru;
       `,
     output: `5`,
   },
   {
     name: `whileStatement test with single continue statement, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 5;
-      bhai ye hai step = 0;
-      jab tak bhai (a > 0) {
+      namskara guru;
+      nodu guru a = 5;
+      nodu guru step = 0;
+      guru ellivargu (a > 0) {
         step += 1;
-        agar bhai (a % 2 != 0){
+        guru eega (a % 2 != 0) aadre{
           a -= 2;
-          agla dekh bhai;
+          mundhe nodu guru;
         }
         a -= 1;
       }
-      bol bhai step;
-      bye bhai;
+      helu guru step;
+      aythu guru;
     `,
     output: "3",
   },
   {
     name: `whileStatement test with multiple continue statement, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 5;
-      bhai ye hai step = 0;
-      jab tak bhai (a > 0) {
+      namskara guru;
+      nodu guru a = 5;
+      nodu guru step = 0;
+      guru ellivargu (a > 0) {
         step += 1;
-        agar bhai (a % 2 == 0){
+        guru eega (a % 2 == 0) aadre{
           a -= 2;
-          agla dekh bhai;
+          mundhe nodu guru;
         }
         a -= 1;
-        agla dekh bhai;
-        bol bhai "oye oye oye.. yha tk nhi aana tha bhai";
+        mundhe nodu guru;
+        helu guru "oye oye oye.. yha tk nhi aana tha bhai";
       }
-      bol bhai step;
-      bye bhai;
+      helu guru step;
+      aythu guru;
     `,
     output: "3",
   },
@@ -553,20 +553,20 @@ export const WithOutputPositiveTests = [
     // a: 10 => 7 => 6 => 3 => 2 => -1
     name: `whileStatement test with single continue statement without block, should success`,
     input: `
-      hi bhai;
-      bhai ye hai a = 10;
-      bhai ye hai step = 0;
-      jab tak bhai (a > 0) {
-        agar bhai (a % 2 == 0){
+      namskara guru;
+      nodu guru a = 10;
+      nodu guru step = 0;
+      guru ellivargu (a > 0) {
+        guru eega (a % 2 == 0) aadre{
           a -= 3;
-          agla dekh bhai;
+          mundhe nodu guru;
         }
         a -= 1;
-        agar bhai (step == 1) agla dekh bhai
+        guru eega (step == 1) aadre mundhe nodu guru
         step += 1;
       }
-      bol bhai step;
-      bye bhai;
+      helu guru step;
+      aythu guru;
     `,
     output: "1",
   },

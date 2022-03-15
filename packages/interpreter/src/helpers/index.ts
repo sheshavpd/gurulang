@@ -25,7 +25,7 @@ export function getOperationValue(
   operator: string
 ) {
   const exception = new RuntimeException(
-    `Ye kya kar raha hai: "${operator}" ke sath "${typeof operands.left}" aur "${typeof operands.right}" nahi jamte.`
+    `En madthiddiya guru: "${operator}" jothe "${typeof operands.left}" matte "${typeof operands.right}" sari agalla.`
   );
 
   switch (operator) {
@@ -65,13 +65,13 @@ export function getOperationValue(
       if (operands.right === 0) {
         throw new RuntimeException(`Bhai Bhai Bhai ye kya kar diya...zero se divide ni karte`);
       }
-      
+
       if (checkNumberOperands(operands)) {
         return operands.left / operands.right;
       }
 
       throw exception;
-    
+
     case "%=":
     case "%":
       if (checkNumberOperands(operands)) {
@@ -90,7 +90,7 @@ export function getOperationValue(
       }
 
       throw exception;
-    
+
     case "!=":
       if (checkNumberOperands(operands)) {
         return operands.left !== operands.right;
@@ -101,21 +101,21 @@ export function getOperationValue(
       }
 
       throw exception;
-    
+
     case ">":
       if (checkNumberOperands(operands)) {
         return operands.left > operands.right;
       }
 
       throw exception;
-    
+
     case "<":
       if (checkNumberOperands(operands)) {
         return operands.left < operands.right;
       }
 
       throw exception;
-    
+
     case ">=":
       if (checkNumberOperands(operands)) {
         return operands.left >= operands.right;

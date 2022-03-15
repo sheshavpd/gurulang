@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode, NodeType } from "bhai-lang-parser";
+import { ASTNode, NodeType } from "guru-lang-parser";
 
 import InvalidStateException from "../../exceptions/invalidStateException";
 import NallaPointerException from "../../exceptions/nallaPointerException";
@@ -31,11 +31,11 @@ export default class BinaryExpression implements Visitor {
     } else if (node.type == NodeType.LogicalExpression) {
       this._checkNalla(node);
 
-      left = node.left.type == NodeType.BooleanLiteral ? (node.left.value == "sahi" ? true : false) : InterpreterModule.getVisitor(node.left.type).visitNode(
+      left = node.left.type == NodeType.BooleanLiteral ? (node.left.value == "nija" ? true : false) : InterpreterModule.getVisitor(node.left.type).visitNode(
         node.left
       );
 
-      right = node.right.type == NodeType.BooleanLiteral ? (node.right.value == "sahi" ? true : false) : InterpreterModule.getVisitor(node.right.type).visitNode(
+      right = node.right.type == NodeType.BooleanLiteral ? (node.right.value == "nija" ? true : false) : InterpreterModule.getVisitor(node.right.type).visitNode(
         node.right
       );
 
@@ -51,7 +51,7 @@ export default class BinaryExpression implements Visitor {
     }
 
     const nallaException = new NallaPointerException(
-      `Nalla operand ni jamta "${node.operator}" ke sath`
+      `Nalla operand sari hogalla "${node.operator}" jothege`
     );
 
     if (
@@ -80,7 +80,7 @@ export default class BinaryExpression implements Visitor {
     }
 
     const runtimeException = new RuntimeException(
-      `Boolean operand ni jamta "${node.operator}" ke sath`
+      `Boolean operand sari hogalla "${node.operator}" jothege`
     );
 
     if (

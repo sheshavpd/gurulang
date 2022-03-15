@@ -9,7 +9,7 @@ import Expression from "./expression";
 
 export default class PrintStatement extends Statement {
   getStatement(): ASTNode {
-    this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.BOL_BHAI_TYPE);
+    this._tokenExecutor.eatTokenAndForwardLookahead(TokenTypes.HELU_GURU_TYPE);
 
     const expressions = this._getExpressionList();
 

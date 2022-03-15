@@ -14,7 +14,7 @@ export default class StatementList {
   getInitialStatementList() {
     for (
       let lookahead = this._tokenExecutor.getLookahead();
-      lookahead !== null && lookahead.type !== TokenTypes.HI_BHAI_TYPE;
+      lookahead !== null && lookahead.type !== TokenTypes.HI_GURU_TYPE;
       lookahead = this._tokenExecutor.getLookahead()
     ) {
       this._tokenExecutor.eatTokenAndForwardLookahead(lookahead.type);

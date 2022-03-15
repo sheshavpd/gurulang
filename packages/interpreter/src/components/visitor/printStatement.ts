@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode } from "bhai-lang-parser";
+import { ASTNode } from "guru-lang-parser";
 
 import InvalidStateException from "../../exceptions/invalidStateException";
 import InterpreterModule from "../../module/interpreterModule";
@@ -16,9 +16,9 @@ export default class PrintStatement implements Visitor {
       .map((expression: ASTNode) => {
         let currentNodeOutput = InterpreterModule.getVisitor(expression.type).visitNode(expression);
         if (currentNodeOutput === true)
-          currentNodeOutput = "sahi";
+          currentNodeOutput = "nija";
         else if (currentNodeOutput === false)
-          currentNodeOutput = "galat";
+          currentNodeOutput = "sullu";
         return currentNodeOutput;
       }
       )

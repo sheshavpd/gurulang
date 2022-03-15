@@ -7,17 +7,17 @@ const features = [
     name: "General",
     description: (
       <>
-        <code className="language-cpp">hi bhai</code> is the entrypoint for the
+        <code className="language-cpp">namskara guru</code> is the entrypoint for the
         program and all program must end with{" "}
-        <code className="language-cpp">bye bhai</code>. Anything outside of it
+        <code className="language-cpp">aythu guru</code>. Anything outside of it
         will be ignored.
       </>
     ),
     code: `This will be ignored
 
-hi bhai
+namskara guru
   // Write code here
-bye bhai
+aythu guru
 
 This too
     `,
@@ -27,17 +27,17 @@ This too
     description: (
       <>
         Variables can be declared using{" "}
-        <code className="language-cpp">bhai ye hai</code>.
+        <code className="language-cpp">nodu guru</code>.
       </>
     ),
-    code: `hi bhai
-    bhai ye hai a = 10;
-    bhai ye hai b = "two";
-    bhai ye hai c = 15;
-    a = a + 1;
-    b = 21;
-    c *= 2;
-bye bhai
+    code: `namskara guru
+      nodu guru a = 10;
+      nodu guru b = "two";
+      nodu guru c = 15;
+      a = a + 1;
+      b = 21;
+      c *= 2;
+aythu guru
     `,
   },
   {
@@ -46,80 +46,80 @@ bye bhai
       <>
         Numbers and strings are like other languages. Null values can be denoted
         using <code className="language-cpp">nalla</code>.{" "}
-        <code className="language-cpp">sahi</code> and{" "}
-        <code className="language-cpp">galat</code> are the boolean values.
+        <code className="language-cpp">nija</code> and{" "}
+        <code className="language-cpp">sullu</code> are the boolean values.
       </>
     ),
-    code: `hi bhai
-    bhai ye hai a = 10;
-    bhai ye hai b = 10 + (15*20);
-    bhai ye hai c = "two";
-    bhai ye hai d = 'ok';
-    bhai ye hai e = nalla;
-    bhai ye hai f = sahi;
-    bhai ye hai g = galat;
-bye bhai
+    code: `namskara guru
+    nodu guru a = 10;
+    nodu guru b = 10 + (15*20);
+    nodu guru c = "two";
+    nodu guru d = 'ok';
+    nodu guru e = nalla;
+    nodu guru f = nija;
+    nodu guru g = sullu;
+aythu guru
     `,
   },
   {
     name: "Built-ins",
     description: (
       <>
-        Use <code className="language-cpp">bol bhai</code> to print anything to
+        Use <code className="language-cpp">helu guru</code> to print anything to
         console.
       </>
     ),
-    code: `hi bhai
-    bol bhai "Hello World";
-    bhai ye hai a = 10;
+    code: `namskara guru
+    helu guru "Hello World";
+    nodu guru a = 10;
     {
-       bhai ye hai b = 20;
-       bol bhai a + b;
+       nodu guru b = 20;
+       helu guru a + b;
     }
-    bol bhai 5, 'ok', nalla , sahi , galat;
-bye bhai
+    helu guru 5, 'ok', nalla , nija , sullu;
+aythu guru
     `,
   },
   {
     name: "Conditionals",
     description: (
       <>
-        Bhailang supports simple if else construct , <code className="language-cpp">agar bhai</code> block will execute if condition is <code className="language-cpp">sahi</code> and <code className="language-cpp">warna bhai</code> block will execute if condition is <code className="language-cpp">galat</code>.
+        GuruLang supports simple if else construct , <code className="language-cpp">guru eega</code> block will execute if condition is <code className="language-cpp">nija</code> and <code className="language-cpp">illandre guru</code> block will execute if condition is <code className="language-cpp">sullu</code>.
       </>
     ),
-    code: `hi bhai
-    bhai ye hai a = 10;
-    agar bhai (a < 25) {
-      bol bhai "a is less than 25";
-    } warna bhai {
-      bol bhai "a is greater than or equal to 25";
+    code: `namskara guru
+    nodu guru a = 10;
+    guru eega (a < 25) aadre{
+      helu guru "a is less than 25";
+    } illandre guru {
+      helu guru "a is greater than or equal to 25";
     }
-bye bhai
+aythu guru
     `
   },
   {
     name: "Loops",
     description: (
       <>
-        Statements inside <code className="language-cpp">jab tak bhai</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">sahi</code>. If the condition becomes <code className="language-cpp">galat</code>, statement within the loop stops executing and control passes to the statement following the loop. 
-        Use <code className="language-cpp">bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.
+        Statements inside <code className="language-cpp">guru ellivargu</code> blocks are executed as long as a specified condition evaluates to <code className="language-cpp">nija</code>. If the condition becomes <code className="language-cpp">sullu</code>, statement within the loop stops executing and control passes to the statement following the loop.
+        Use <code className="language-cpp">saak bidu guru</code> to break the loop and <code className="language-cpp">mundhe nodu guru</code> to continue within loop.
       </>
     ),
-    code: `hi bhai
-    bhai ye hai a = 0;
-    jab tak bhai (a < 10) {
+    code: `namskara guru
+    nodu guru a = 0;
+    guru ellivargu (a < 10) {
       a += 1;
-      agar bhai (a == 5) {
-        bol bhai "andar se bol bhai ", a;
-        agla dekh bhai;
+      guru eega (a == 5) aadre{
+        helu guru "andar se helu guru ", a;
+        mundhe nodu guru;
       }
-      agar bhai (a == 6) {
-        bas kar bhai;
+      guru eega (a == 6) aadre{
+        saak bidu guru;
       }
-      bol bhai a;
+      helu guru a;
     }
-    bol bhai "done";
-bye bhai
+    helu guru "done";
+aythu guru
     `
   }
 
@@ -134,8 +134,7 @@ export default function Documentation() {
             Documentation
           </h2>
           <p className="mt-4 text-gray-300">
-            Bhailang is dynamically typed toy programming language, based on an
-            inside joke, written in Typescript.
+            GuruLang is a fun programming language, forked from BhaiLang.
           </p>
 
           <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
