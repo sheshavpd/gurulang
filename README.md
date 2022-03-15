@@ -1,7 +1,10 @@
 <h1 align="center">Guru Lang</h1>
-
 <p align="center">
-  <b>Guru lang is a toy programming language forked from Bhai lang :)</b>
+<a href="https://www.npmjs.com/package/gurulang"><img alt="Build" src="https://img.shields.io/badge/npm-gurulang-orange"/></a>
+
+</p>
+<p align="center">
+  <b>Guru lang is a fun programming language forked from BhaiLang :)</b>
 </p>
 <br>
 
@@ -96,7 +99,7 @@ namskara guru
     nodu guru b = 20;
     helu guru a + b;
   }
-  helu guru 5, 'ok', nalla , nija , sullu;
+  helu guru 5, 'ok' , nija , sullu;
 aythu guru
 ```
 

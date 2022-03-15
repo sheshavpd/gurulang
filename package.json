@@ -1,5 +1,5 @@
 {
-  "name": "bhai-lang",
+  "name": "guru-lang",
   "version": "0.0.1",
   "private": true,
   "workspaces": [
@@ -27,16 +27,6 @@
     "parser",
     "javascript",
     "typescript"
-  ],
-  "contributors": [
-    {
-      "name": "Aniket Singh",
-      "url": "https://github.com/aniketsingh0104"
-    },
-    {
-      "name": "Rishabh Tripathi",
-      "url": "https://github.com/ristri"
-    }
   ],
   "engines": {
     "npm": ">=7.0.0",
